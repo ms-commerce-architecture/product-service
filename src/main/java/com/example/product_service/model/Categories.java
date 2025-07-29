@@ -6,9 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.math.BigInteger;
+
 
 @Document(value = "categories")
 @AllArgsConstructor
@@ -16,7 +17,8 @@ import java.math.BigInteger;
 @Data
 @Builder
 public class Categories {
-    private BigInteger categoryId;
+    @Id
+    private String categoryId;
     private String categoryName;
     private String parentCategoryId;
     private String description;

@@ -5,7 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.math.BigInteger;
 
 @Document(value = "product_attributes")
 @AllArgsConstructor
@@ -13,4 +16,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @Builder
 public class ProductAttributes {
+    @Id
+    private String attribute_id;
+    private BigInteger product_id;
+    private String attribute_name;
+    private String attribute_value;
 }

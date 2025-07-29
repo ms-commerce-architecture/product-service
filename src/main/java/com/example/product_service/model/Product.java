@@ -16,11 +16,11 @@ import java.math.BigInteger;
 @Data
 public class Product {
     @Id
-    private BigInteger id;
+    private String id;
     private String productName;
     private String productCode;
     private String description;
-    private BigInteger categoryId;
+    private String categoryId;
     private BigDecimal price;
     private BigDecimal costPrice;
     private BigDecimal weight;
