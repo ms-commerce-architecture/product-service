@@ -5,7 +5,7 @@ import com.example.product_service.model.Enums.ProductStatus;
 import java.math.BigDecimal;
 import java.util.List;
 
-public record ProductRequest(  String id,String productName,
+public record ProductRequest( String productName,
          String productCode,
          String description,
          String categoryId,
@@ -14,8 +14,10 @@ public record ProductRequest(  String id,String productName,
          BigDecimal weight,
          String dimensions,
          ProductStatus status, List<InitialInventoryRequest> initialInventory,
+                              List<AttributesRequest> attributes
 
 
-                               List<AttributesRequest> attributes
+
 ) {
+
 }
