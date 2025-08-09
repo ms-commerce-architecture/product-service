@@ -16,16 +16,7 @@ public class ProductAttributesServices {
     private final ProductAttributesRepository productAttributesRepository;
 
 
-    public AttributesResponse createAttributes(AttributesRequest attributesRequest) {
-        ProductAttributes productAttributes = ProductAttributes.builder().product_id(attributesRequest.product_id())
-                .attribute_name(attributesRequest.attribute_name()).attribute_value(attributesRequest.attribute_value())
-                .build();
-         ProductAttributes savedProductAttributes = productAttributesRepository.save(productAttributes);
 
-         return new AttributesResponse(savedProductAttributes.getAttribute_id(),savedProductAttributes.getProduct_id(),
-                 savedProductAttributes.getAttribute_name(), savedProductAttributes.getAttribute_value());
-
-    }
 
 
 }
