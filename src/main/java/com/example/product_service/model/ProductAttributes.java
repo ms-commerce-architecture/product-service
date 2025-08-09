@@ -18,7 +18,7 @@ import java.math.BigInteger;
 public class ProductAttributes {
     @Id
     private String attribute_id;
-    private BigInteger product_id;
+    private String product_id;
     private String attribute_name;
     private String attribute_value;
 }

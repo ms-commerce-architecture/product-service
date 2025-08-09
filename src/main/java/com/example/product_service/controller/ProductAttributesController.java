@@ -12,13 +12,5 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/attributes")
 @RequiredArgsConstructor
 public class ProductAttributesController {
-    private final ProductAttributesServices productAttributesServices;
 
-
-
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public AttributesResponse createProductAttributes(@RequestBody AttributesRequest productAttributes) {
-          return productAttributesServices.createAttributes(productAttributes);
-    }
 }
