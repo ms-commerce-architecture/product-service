@@ -222,9 +222,9 @@ public class ProductServiceImpl implements ProductService {
         for (AttributesRequest request : attributesRequest) {
 
             ProductAttributes attribute = ProductAttributes.builder()
-                    .product_id(productId)
-                    .attribute_name(request.attribute_name())
-                    .attribute_value(request.attribute_value())
+                    .productId(productId)
+                    .attributeName(request.attribute_name())
+                    .attributeValue(request.attribute_value())
                     .build();
 
 

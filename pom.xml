@@ -75,11 +75,7 @@
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.8.4</version>
 		</dependency>
-		<dependency>
-			<groupId>com.github.loki4j</groupId>
-			<artifactId>loki-logback-appender</artifactId>
-			<version>1.4.1</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -117,6 +113,13 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>com.github.loki4j</groupId>
+			<artifactId>loki-logback-appender</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
